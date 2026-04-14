@@ -45,6 +45,10 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ghcr.io/${{ github.repository_owner }}/paris-roubaix:${{ steps.meta.outputs.image_tag }}
+          labels: |
+            org.opencontainers.image.source=https://github.com/${{ github.repository }}
+            org.opencontainers.image.title=paris-roubaix
+            org.opencontainers.image.description=Chinese Paris-Roubaix keyword site
           build-args: |
             NEXT_PUBLIC_WEB_URL=https://paris-roubaix.lol
             NEXT_PUBLIC_PROJECT_NAME=paris-roubaix
