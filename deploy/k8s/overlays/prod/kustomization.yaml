@@ -9,4 +9,4 @@ labels:
 images:
   - name: ghcr.io/gateszhangc/paris-roubaix
     newName: registry.144.91.77.245.sslip.io/paris-roubaix
-    newTag: 18333c3cf10ed3a433427d4133ce78d29e098ed9
+    newTag: a580fabaca3992fada7299e13b4e7a6269b352b0
