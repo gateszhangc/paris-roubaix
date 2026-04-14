@@ -37,7 +37,7 @@ BACKEND_AUTOSTART=false npm run dev:playwright
 - canonical、robots、sitemap、FAQ JSON-LD、OG metadata
 - Clarity project id: `wb53esm6lg`
 - Argo CD / Kustomize 最小部署清单
-- GitHub Actions -> GHCR -> Argo CD 自动发布链路
+- GitHub Actions -> internal registry -> Argo CD 自动发布链路
 
 ## 关键文件
 
@@ -76,7 +76,7 @@ npx playwright test e2e/homepage-root.spec.ts e2e/homepage-hydration.spec.ts e2e
 
 - GitHub repository: `gateszhangc/paris-roubaix`
 - Git branch: `main`
-- Image repository: `ghcr.io/gateszhangc/paris-roubaix`
+- Image repository: `registry.144.91.77.245.sslip.io/paris-roubaix`
 - Argo CD application: `paris-roubaix`
 
 部署映射与待确认项见：

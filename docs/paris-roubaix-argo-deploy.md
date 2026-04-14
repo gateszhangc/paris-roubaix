@@ -4,7 +4,7 @@
 
 - GitHub repository: `gateszhangc/paris-roubaix`
 - Git branch: `main`
-- Image repository: `ghcr.io/gateszhangc/paris-roubaix`
+- Image repository: `registry.144.91.77.245.sslip.io/paris-roubaix`
 - K8s manifest path: `deploy/k8s/overlays/prod`
 - Argo CD project: `paris-roubaix`
 - Argo CD application: `paris-roubaix`
@@ -14,15 +14,14 @@
 
 汇总链路：
 
-`gateszhangc/paris-roubaix -> main -> ghcr.io/gateszhangc/paris-roubaix -> deploy/k8s/overlays/prod -> argocd/paris-roubaix`
+`gateszhangc/paris-roubaix -> main -> registry.144.91.77.245.sslip.io/paris-roubaix -> deploy/k8s/overlays/prod -> argocd/paris-roubaix`
 
 ## 仓库内清单
 
 1. `deploy/k8s/base/namespace.yaml`
-2. `deploy/k8s/base/dokploy-fleet-ghcr-sealedsecret.yaml`
-3. `deploy/k8s/base/deployment.yaml`
-4. `deploy/k8s/base/service.yaml`
-5. `deploy/k8s/base/ingress.yaml`
+2. `deploy/k8s/base/deployment.yaml`
+3. `deploy/k8s/base/service.yaml`
+4. `deploy/k8s/base/ingress.yaml`
 6. `deploy/k8s/overlays/prod/kustomization.yaml`
 7. `deploy/k8s/argocd/project.yaml`
 8. `deploy/k8s/argocd/repository-secret.yaml`
@@ -32,7 +31,7 @@
 ## 发布流程
 
 1. 推送到 `main`
-2. GitHub Actions 构建并推送 `ghcr.io/gateszhangc/paris-roubaix:${GITHUB_SHA}`
+2. GitHub Actions 构建并推送 `registry.144.91.77.245.sslip.io/paris-roubaix:${GITHUB_SHA}`
 3. Workflow 回写 `deploy/k8s/overlays/prod/kustomization.yaml` 的 `newTag`
 4. Argo CD 自动同步 `paris-roubaix` 应用
 5. Ingress 提供 `paris-roubaix.lol` 和 `www.paris-roubaix.lol`

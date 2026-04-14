@@ -8,7 +8,6 @@ on:
 
 permissions:
   contents: write
-  packages: write
 
 concurrency:
   group: paris-roubaix-release
@@ -28,12 +27,12 @@ jobs:
         id: meta
         run: echo "image_tag=${GITHUB_SHA}" >> "$GITHUB_OUTPUT"
 
-      - name: Log in to GHCR
+      - name: Log in to internal registry
         uses: docker/login-action@v3
         with:
-          registry: ghcr.io
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          registry: registry.144.91.77.245.sslip.io
+          username: ${{ secrets.REGISTRY_USERNAME }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -44,7 +43,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/paris-roubaix:${{ steps.meta.outputs.image_tag }}
+          tags: registry.144.91.77.245.sslip.io/paris-roubaix:${{ steps.meta.outputs.image_tag }}
           labels: |
             org.opencontainers.image.source=https://github.com/${{ github.repository }}
             org.opencontainers.image.title=paris-roubaix
@@ -53,18 +52,6 @@ jobs:
             NEXT_PUBLIC_WEB_URL=https://paris-roubaix.lol
             NEXT_PUBLIC_PROJECT_NAME=paris-roubaix
             NEXT_PUBLIC_CLARITY_PROJECT_ID=wb53esm6lg
-
-      - name: Make GHCR package public
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          curl --fail --silent --show-error \
-            -X PATCH \
-            -H "Accept: application/vnd.github+json" \
-            -H "Authorization: Bearer $GH_TOKEN" \
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            https://api.github.com/users/${{ github.repository_owner }}/packages/container/paris-roubaix/visibility \
-            --data '{"visibility":"public"}'
 
   update-gitops-tag:
     if: github.event_name == 'workflow_dispatch' || !contains(github.event.head_commit.message, '[skip ci]')

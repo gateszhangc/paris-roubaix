@@ -8,4 +8,5 @@ labels:
       app.kubernetes.io/instance: paris-roubaix
 images:
   - name: ghcr.io/gateszhangc/paris-roubaix
+    newName: registry.144.91.77.245.sslip.io/paris-roubaix
     newTag: 18333c3cf10ed3a433427d4133ce78d29e098ed9

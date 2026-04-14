@@ -25,8 +25,6 @@ spec:
               - matchExpressions:
                   - key: node-role.kubernetes.io/control-plane
                     operator: DoesNotExist
-      imagePullSecrets:
-        - name: dokploy-fleet-ghcr
       containers:
         - name: web
           image: ghcr.io/gateszhangc/paris-roubaix:bootstrap
