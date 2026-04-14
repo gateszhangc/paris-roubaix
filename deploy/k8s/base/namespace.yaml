@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: paris-roubaix
+  labels:
+    app.kubernetes.io/name: paris-roubaix
+    app.kubernetes.io/part-of: paris-roubaix

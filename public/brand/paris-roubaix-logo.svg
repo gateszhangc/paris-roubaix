@@ -1,0 +1,32 @@
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+  <rect width="1200" height="320" rx="28" fill="#f4efe6" />
+  <g transform="translate(28 32)">
+    <g transform="scale(0.5)">
+      
+    <rect width="512" height="512" rx="72" fill="#f4efe6" />
+    <g transform="translate(256 256)">
+      <ellipse rx="150" ry="252" fill="none" stroke="#101113" stroke-width="34" />
+      <ellipse rx="112" ry="214" fill="none" stroke="#f0bf5a" stroke-width="10" stroke-dasharray="18 24" opacity="0.95" />
+      <path d="M -112 -16 C -48 -120, 46 -120, 116 -12 C 62 34, 10 56, -44 96 C -82 76, -106 38, -112 -16 Z" fill="#8d1111" opacity="0.96" />
+      <g transform="translate(-8 40) rotate(-16)">
+        <rect x="-124" y="-26" width="248" height="54" rx="14" fill="#101113" />
+        <rect x="-115" y="-17" width="32" height="36" rx="8" fill="#d9d3c7" />
+        <rect x="-72" y="-17" width="32" height="36" rx="8" fill="#d9d3c7" />
+        <rect x="-29" y="-17" width="32" height="36" rx="8" fill="#d9d3c7" />
+        <rect x="14" y="-17" width="32" height="36" rx="8" fill="#d9d3c7" />
+        <rect x="57" y="-17" width="32" height="36" rx="8" fill="#d9d3c7" />
+        <rect x="100" y="-17" width="15" height="36" rx="8" fill="#d9d3c7" />
+      </g>
+      <circle cx="92" cy="-144" r="18" fill="#f0bf5a" />
+    </g>
+  
+    </g>
+  </g>
+  <g transform="translate(320 78)">
+    <text x="0" y="84" font-size="92" font-family="'Arial Narrow', 'Helvetica Neue', sans-serif" font-weight="700" letter-spacing="3" fill="#101113">PARIS</text>
+    <text x="0" y="178" font-size="130" font-family="'Arial Narrow', 'Helvetica Neue', sans-serif" font-weight="800" letter-spacing="2" fill="#8d1111">ROUBAIX</text>
+    <text x="6" y="226" font-size="26" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="600" letter-spacing="4" fill="#4f5452">HELL OF THE NORTH · 中文速览</text>
+    <rect x="0" y="246" width="762" height="6" rx="3" fill="#f0bf5a" />
+  </g>
+</svg>

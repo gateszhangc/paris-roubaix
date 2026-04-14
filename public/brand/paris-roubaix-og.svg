@@ -1,0 +1,39 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f4efe6" />
+  <rect x="0" y="0" width="1200" height="190" fill="#101113" />
+  <g opacity="0.92" transform="translate(850 58)">
+    
+    <rect width="220" height="220" rx="72" fill="#f4efe6" />
+    <g transform="translate(110 110)">
+      <ellipse rx="170" ry="270" fill="none" stroke="#101113" stroke-width="34" />
+      <ellipse rx="132" ry="232" fill="none" stroke="#f0bf5a" stroke-width="10" stroke-dasharray="18 24" opacity="0.95" />
+      <path d="M -112 -16 C -48 -120, 46 -120, 116 -12 C 62 34, 10 56, -44 96 C -82 76, -106 38, -112 -16 Z" fill="#8d1111" opacity="0.96" />
+      <g transform="translate(-8 40) rotate(-16)">
+        <rect x="-124" y="-26" width="248" height="54" rx="14" fill="#101113" />
+        <rect x="-115" y="-17" width="32" height="36" rx="8" fill="#d9d3c7" />
+        <rect x="-72" y="-17" width="32" height="36" rx="8" fill="#d9d3c7" />
+        <rect x="-29" y="-17" width="32" height="36" rx="8" fill="#d9d3c7" />
+        <rect x="14" y="-17" width="32" height="36" rx="8" fill="#d9d3c7" />
+        <rect x="57" y="-17" width="32" height="36" rx="8" fill="#d9d3c7" />
+        <rect x="100" y="-17" width="15" height="36" rx="8" fill="#d9d3c7" />
+      </g>
+      <circle cx="92" cy="-144" r="18" fill="#f0bf5a" />
+    </g>
+  
+  </g>
+  <text x="82" y="112" font-size="40" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="8" fill="#f0bf5a">2026 中文速览</text>
+  <text x="76" y="316" font-size="152" font-family="'Arial Narrow', 'Helvetica Neue', sans-serif" font-weight="800" letter-spacing="3" fill="#101113">PARIS</text>
+  <text x="76" y="448" font-size="186" font-family="'Arial Narrow', 'Helvetica Neue', sans-serif" font-weight="800" letter-spacing="2" fill="#8d1111">ROUBAIX</text>
+  <text x="82" y="516" font-size="34" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="600" letter-spacing="4" fill="#4f5452">RESULTS · ROUTE GUIDE · HISTORY</text>
+  <g transform="translate(86 546)">
+    <rect width="1026" height="18" rx="9" fill="#101113" />
+    <rect x="12" y="3" width="140" height="12" rx="6" fill="#d9d3c7" />
+    <rect x="166" y="3" width="140" height="12" rx="6" fill="#d9d3c7" />
+    <rect x="320" y="3" width="140" height="12" rx="6" fill="#d9d3c7" />
+    <rect x="474" y="3" width="140" height="12" rx="6" fill="#d9d3c7" />
+    <rect x="628" y="3" width="140" height="12" rx="6" fill="#d9d3c7" />
+    <rect x="782" y="3" width="140" height="12" rx="6" fill="#d9d3c7" />
+    <rect x="936" y="3" width="78" height="12" rx="6" fill="#d9d3c7" />
+  </g>
+</svg>
