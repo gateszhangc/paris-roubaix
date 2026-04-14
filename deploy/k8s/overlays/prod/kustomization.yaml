@@ -8,4 +8,4 @@ labels:
       app.kubernetes.io/instance: paris-roubaix
 images:
   - name: ghcr.io/gateszhangc/paris-roubaix
-    newTag: bootstrap
+    newTag: 9781417e4055a0baebbb3198c11e793163213667
